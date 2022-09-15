@@ -1,0 +1,204 @@
+.reasons {
+  margin: 100px auto;
+  padding: 40px 0px;
+  color: #0e244f;
+
+  @media (max-width: 1024px) {
+    padding: 10px 0px;
+    margin: 60px auto;
+  }
+
+  &__titleBox {
+    border: 5px solid #e95d08;
+    padding: 70px;
+    width: 660px;
+    margin: 70px auto 50px auto;
+
+    @media (max-width: 764px) {
+      width: 100%;
+      padding: 30px;
+      margin: 0;
+    }
+
+    &__title {
+      font-family: "Transat Medium";
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+
+    &__header {
+      font-family: "Transat Light";
+      font-weight: 700;
+      font-size: 125px;
+      line-height: 156px;
+
+      @media (max-width: 1024px) {
+        font-size: 80px;
+        line-height: 66px;
+      }
+
+      span {
+        font-family: "Transat Bold";
+        font-weight: bold;
+      }
+    }
+
+    &__subtitle {
+      font-family: "Transat Medium";
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 65px;
+
+      @media (max-width: 1024px) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  &__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140.62%;
+    color: #2b2b2b;
+    margin-top: 20px;
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__box {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+
+    &__card {
+      margin: 20px;
+
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+      }
+
+      &__number {
+        font-family: "Transat Light";
+        font-weight: 300;
+        font-size: 90px;
+        line-height: 120px;
+
+        @media (max-width: 768px) {
+          text-align: center;
+          width: 50%;
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+
+      &__line {
+        border-bottom: 3px solid #e95d08;
+        margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+          background-color: #e95d08;
+          display: inline-block;
+          content: "";
+          width: 5px;
+          height: 150px;
+          margin: 0px 10px;
+        }
+      }
+
+      &__text {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140.62%;
+        color: #2b2b2b;
+
+        @media (max-width: 768px) {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 110%;
+          width: 100%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__box2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 40px;
+
+    @media (max-width: 1024px) {
+      margin: 10px;
+      border-top: 3px solid #e95d08;
+    }
+
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      @media (max-width: 1024px) {
+        margin: 30px 40px;
+      }
+
+      &__number {
+        display: inline-block;
+        font-family: "Transat Light";
+        font-weight: 300;
+        font-size: 90px;
+        line-height: 120px;
+        width: 30%;
+
+        @media (max-width: 1024px) {
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 50px;
+          width: 20%;
+        }
+      }
+
+      &__line {
+        background-color: #e95d08;
+        display: inline-block;
+        content: "";
+        width: 5px;
+        margin: 0px 10px;
+        height: 150px;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+
+      &__text {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140.62%;
+        color: #2b2b2b;
+        padding: 0px 40px;
+
+        @media (max-width: 768px) {
+          text-align: left;
+          font-size: 16px;
+          padding: 0px 20px;
+        }
+      }
+    }
+  }
+}

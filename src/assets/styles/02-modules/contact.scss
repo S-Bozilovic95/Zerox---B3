@@ -1,0 +1,42 @@
+.contact {
+  padding: 50px;
+  margin: 30px 0px;
+  background: #f3f4f9;
+
+  @media (max-width: 1024px) {
+    padding: 20px;
+  }
+
+  &__logoBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background: #ffffff;
+    padding: 30px;
+
+    @media (max-width: 1300px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 30px;
+    }
+
+    @media (max-width: 786px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+    }
+
+    &__logo {
+      padding: 20px;
+      display: block;
+      margin: auto;
+      width: 250px;
+
+      @media (max-width: 1024px) {
+        width: 180px;
+      }
+
+      @media (max-width: 768px) {
+        width: 220px;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+
+  
+  
+{% if module.background_choice == 'no'  %}
+  <section class="gallery">
+    <h3 class="gallery__header">{{ module.header }}</h3>
+    <div class="container">
+      <article class="gallery__imgBox">
+        {% for item in module.gallery_image %}
+          <img class="gallery__imgBox__image {{loop.index > 5? "img-hidden" : ""}}" src="{{ item.src }}" alt="{{ item.alt }}">
+        {% endfor %}
+      </article>
+
+      {% if module.gallery_image|length > 5 %}
+        <div class="gallery__arrow">
+          <svg class="icon" id="arrow" width="79" height="56" viewBox="0 0 79 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M71.4961 8.40234L39.9961 44.4023L8.49609 8.40235" stroke="#0390D1" stroke-width="15" stroke-linecap="round"/>
+          </svg>
+        </div>
+      {% endif %}
+    </div>
+  <section>
+
+{% elif  module.background_choice == 'yes' %}
+  <section class="gallery styledBack">
+    <svg class="borderTop" viewBox="0 0 1533 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 42.0001H0.00299072H1378.82H1533V158H0V42.0001ZM0.004842 42C209.41 86.3574 474.585 112.862 763.021 112.862C1051.46 112.862 1316.63 86.3574 1526.04 42H0.004842Z" fill="#0E244F"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1532.99 0C1532.46 0.15761 1532.64 0.105071 1532.46 0.157665C1084.33 132.772 324.232 83.2755 0 42C210.634 86.2948 475.366 112.861 765.495 112.861C1055.62 112.861 1322.36 86.3938 1532.99 42.0988H1532.99V0Z" fill="#6A8DB3" fill-opacity="0.5"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000269667 0C-0.000269667 0 0.354358 0.1052 0.531875 0.157859C448.083 132.935 1207.59 83.4767 1531.4 42.1506H1533C1322.64 86.4998 1056.25 113 766.501 113C476.749 113 210.363 86.5 0.00216857 42.1506H-0.000269667V0Z" fill="#6A8DB3" fill-opacity="0.5"/>
+    </svg>
+  
+    <h3 class="gallery__header styledHeader">{{ module.header }}</h3>
+    <div class="container">
+      <article class="gallery__imgBox">
+        {% for item in module.gallery_image %}
+          <img class="gallery__imgBox__image {{loop.index > 5? "img-hidden" : ""}}" src="{{ item.src }}" alt="{{ item.alt }}">
+        {% endfor %}
+      </article>
+
+      {% if module.gallery_image|length > 5 %}
+        <div class="gallery__arrow">
+          <svg class="icon" id="arrow" width="79" height="56" viewBox="0 0 79 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M71.4961 8.40234L39.9961 44.4023L8.49609 8.40235" stroke="#0390D1" stroke-width="15" stroke-linecap="round"/>
+          </svg>
+        </div>
+      {% endif %}
+    </div>
+  
+    <svg class="borderBottom" viewBox="0 0 1535 117"  xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path id="svg_1" fill-opacity="0.5" fill="#6A8DB3" d="m1534.99,19.1868c-0.17,-43.2271 -0.35,0.0911 -0.53,0.1366c-448.13,114.9326 -1208.628,72.1211 -1532.86007,36.3491l-1.59895,0c210.63402,38.3888 477.36602,61.3275 767.49502,61.3275c290.134,0 556.864,-22.9385 767.494,-61.3275l0,0l0,-36.4857z" clip-rule="evenodd" fill-rule="evenodd"/>
+      <path id="svg_2" fill-opacity="0.5" fill="#6A8DB3" d="m0.00032,19.1868c0.17749,-43.2271 0.35511,0.0911 0.53286,0.1366c448.13282,114.9326 1208.62682,72.1211 1532.85682,36.3491l1.6,0c-210.63,38.3888 -477.36,61.3275 -767.491,61.3275c-290.129,0 -556.862,-22.9385 -767.4962,-61.3275l-0.00248,0l0,-36.4857z" clip-rule="evenodd" fill-rule="evenodd"/>
+      <path stroke="null" id="svg_3" fill="#0E244F" d="m1568.99993,0l-1613.00002,0l0,15.64975l0.00359,0c221.33784,49.58398 501.62365,79.21186 806.49536,79.21186c304.87382,0 585.15753,-29.62787 806.49055,-79.21186l0.01051,0l0,-15.64975z" clip-rule="evenodd" fill-rule="evenodd"/>
+    </svg>
+  </section>
+{% endif %}
+
+
+
+

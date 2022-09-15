@@ -1,0 +1,52 @@
+[ {
+  "id" : "a3a6fe34-9507-0e71-3a6a-3f25a951f6f7",
+  "name" : "menu",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "default" : 53122247641
+}, {
+  "id" : "d0c43a7e-fb1e-0dbb-a631-9df08da5b92a",
+  "name" : "header_logo",
+  "display_width" : null,
+  "label" : "Header Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent-eu1.net/hubfs/26224046/JRGlobal-Logo---Final-light%201.png",
+    "alt" : "JRGlobal-Logo---Final-light 1",
+    "loading" : "lazy",
+    "width" : 155,
+    "height" : 85,
+    "max_width" : 155,
+    "max_height" : 85
+  }
+}, {
+  "id" : "0e84e8b3-24fc-9cd2-6b2a-abea41140441",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent-eu1.net/hubfs/26224046/JRGlobal-Logo---Final-light%201.png",
+    "alt" : "JRGlobal-Logo---Final-light 1",
+    "loading" : "lazy",
+    "width" : 155,
+    "height" : 85,
+    "max_width" : 155,
+    "max_height" : 85
+  }
+} ]

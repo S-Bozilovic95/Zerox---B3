@@ -1,0 +1,56 @@
+<section class="reasons">
+  <div class="container">
+    
+    {% if  module.display_choice == 'split' %}
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <hgroup class="reasons__titleBox">
+            <h4 class="reasons__titleBox__title">{{ module.reasons_title }}</h4>
+            <h2 class="reasons__titleBox__header">{{ module.reasons_header }}</h2>
+            <h3 class="reasons__titleBox__subtitle">{{ module.reasons_subtitle }}</h3>
+          </hgroup>
+          <p class="reasons__desc">{{ module.descritprion }}</p>
+        </div>
+        
+      <div class="col-lg-6 col-12">
+          <article class="reasons__box2">
+            {% for item in module.reasons_card %}
+              <div  class="reasons__box2__card" >
+                <h3 class="reasons__box2__card__number ">#{{ loop.index }}</h3>
+                <div class="reasons__box2__card__line "></div>
+                <p class="reasons__box2__card__text">{{ item.card_text }}</p>
+              </div>
+            {% endfor %}
+          </article>
+        </div>
+      </div>
+      
+    {% elif module.display_choice == 'normal' %}
+      <hgroup class="reasons__titleBox">
+        <h4 class="reasons__titleBox__title">{{ module.reasons_title }}</h4>
+        <h2 class="reasons__titleBox__header">{{ module.reasons_header }}</h2>
+        <h3 class="reasons__titleBox__subtitle">{{ module.reasons_subtitle }}</h3>
+      </hgroup>
+      
+      <article class="reasons__box" >
+        <div class="row  justify-content-center">
+          {% for item in module.reasons_card %}
+            <div class="col-md-4   col-12 ">
+              <div  class="reasons__box__card">
+                <h3 class="reasons__box__card__number">#{{ loop.index }}</h3>
+                <div class="reasons__box__card__line"></div>
+                <p class="reasons__box__card__text">{{ item.card_text }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </article>
+
+    {% endif %}
+    
+  </div>
+</section>
+
+
+
+

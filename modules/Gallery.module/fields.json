@@ -1,0 +1,51 @@
+[ {
+  "id" : "a3a34796-4163-38e7-e8ac-966f65270b4c",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Gallery"
+}, {
+  "id" : "56b2d534-4ff9-93aa-e3ba-d1ef77fdf459",
+  "name" : "gallery_image",
+  "display_width" : null,
+  "label" : "Gallery Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent-eu1.net/hubfs/26224046/Media.png",
+    "alt" : "Media",
+    "loading" : "lazy",
+    "width" : 267,
+    "height" : 260,
+    "max_width" : 267,
+    "max_height" : 260
+  }
+}, {
+  "id" : "0cb75777-8288-71c1-cc5a-95fd03f6910b",
+  "name" : "background_choice",
+  "display_width" : null,
+  "label" : "Background Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "no", "None" ], [ "yes", "Standard" ] ],
+  "type" : "choice",
+  "default" : "no"
+} ]

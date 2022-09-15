@@ -1,0 +1,19 @@
+<section class="header" style="background-iamge:url('')">
+
+  <div class="header__navBar">
+    <img class="header__navBar__logo" src="{{ module.logo.src }}" alt="{{ module.logo.alt }}">
+    <svg class="header__navBar__menuIcon" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 2.30836C0 1.32541 0.79684 0.528564 1.77979 0.528564H23.2202C24.2032 0.528564 25 1.32541 25 2.30836C25 3.29131 24.2032 4.08815 23.2202 4.08815H12.5H1.77979C0.79684 4.08815 0 3.29131 0 2.30836Z" fill="#C7E6F8"/>
+      <path d="M0 8.83427C0 7.85131 0.751761 7.05447 1.6791 7.05447H23.3209C24.2482 7.05447 25 7.85131 25 8.83427C25 9.81722 24.2482 10.6141 23.3209 10.6141H1.6791C0.751761 10.6141 0 9.81722 0 8.83427Z" fill="#C7E6F8"/>
+      <path d="M0 15.3602C0 14.3772 0.751761 13.5804 1.6791 13.5804H23.3209C24.2482 13.5804 25 14.3772 25 15.3602C25 16.3431 24.2482 17.14 23.3209 17.14H1.6791C0.751761 17.14 0 16.3431 0 15.3602Z" fill="#C7E6F8"/>
+    </svg>
+  </div>
+  
+  <div class="header__overlay hideOverlay"></div>
+
+  <div class="header__menuBar moveBarRight">
+    <svg class="header__menuBar__x" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.878px" height="122.88px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
+    {% menu id="{{ module.menu }}" %}
+  <div>
+</section>
+

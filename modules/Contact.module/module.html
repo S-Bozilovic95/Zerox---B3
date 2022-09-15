@@ -1,0 +1,10 @@
+<section class="contact">
+  
+  <div class="container">
+    <article class="contact__logoBox">
+      {% for item in module.logo %}
+        <img class="contact__logoBox__logo" src="{{ item.src }}" alt="{{ item.alt }}">
+      {% endfor %}
+    </article>
+  </div>
+</section>
